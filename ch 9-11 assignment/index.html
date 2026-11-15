@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ch 9-11 Assignment</title>
+</head>
+<body>
+  <h1>ch 9-11 assignment</h1>
+  <script>
+// Q1: 
+var city = prompt("Enter your city name:");
+if (city === "Karachi") {
+  console.log("Welcome to city of lights");
+}
+
+// Q2: 
+var gender = prompt("Enter your gender (male/female):");
+if (gender === "male") {
+  console.log("Good Morning Sir");
+} else if (gender === "female") {
+  console.log("Good Morning Ma'am");
+}
+
+// Q3: 
+var color = prompt("Enter signal color (red/yellow/green):");
+if (color === "red") {
+  console.log("Must Stop");
+} else if (color === "yellow") {
+  console.log("Ready to move");
+} else if (color === "green") {
+  console.log("Move now");
+}
+
+// Q4: 
+var fuel = (prompt("Enter remaining fuel in litres:"));
+if (fuel < 0.25) {
+  console.log("Please refill the fuel in your car");
+}
+
+// Q5: 
+var a = 4;
+if (++a === 5) {
+  console.log("given condition for variable a is true");
+}
+
+var b = 82;
+if (b++ === 83) {
+  console.log("given condition for variable b is true");
+}
+
+var c = 12;
+if (c++ === 13) {
+  console.log("condition 1 is true");
+}
+if (c === 13) {
+  console.log("condition 2 is true");
+}
+if (++c < 14) {
+  console.log("condition 3 is true");
+}
+if (c === 14) {
+  console.log("condition 4 is true");
+}
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost) {
+  console.log("The cost equals");
+}
+if (true) {
+  console.log("True");
+}
+if (false) {
+  console.log("False");
+}
+if ("car" < "cat") {
+  console.log("car is smaller than cat");
+}
+
+// Q6: 
+var sub1 = (prompt("Enter marks of subject 1:"));
+var sub2 = (prompt("Enter marks of subject 2:"));
+var sub3 = (prompt("Enter marks of subject 3:"));
+var totalMarks = (prompt("Enter total marks:"));
+
+var obtained = sub1 + sub2 + sub3;
+var percentage = Math.round((obtained / totalMarks) * 100);
+var grade;
+var remarks;
+
+if (percentage >= 80) {
+  grade = "A-one";
+  remarks = "Excellent";
+} else if (percentage >= 70) {
+  grade = "A";
+  remarks = "Good";
+} else if (percentage >= 60) {
+  grade = "B";
+  remarks = "You need to improve";
+} else {
+  grade = "Fail";
+  remarks = "Sorry";
+}
+
+console.log("Marks Sheet");
+console.log("Total marks : " + totalMarks);
+console.log("Marks obtained : " + obtained);
+console.log("Percentage : " + percentage + "%");
+console.log("Grade : " + grade);
+console.log("Remarks : " + remarks);
+
+// Q7: 
+var secret = 7;
+var guess = (prompt("Guess the secret number (1 to 10):"));
+if (guess === secret) {
+  console.log("Bingo! Correct answer");
+} else if (guess + 1 === secret) {
+  console.log("Close enough to the correct answer");
+}
+
+// Q8: 
+var num1 = (prompt("Enter a number to check divisibility by 3:"));
+if (num1 % 3 === 0) {
+  console.log(num1 + " is divisible by 3");
+}
+
+// Q9: 
+var num2 = (prompt("Enter a number to check even or odd:"));
+if (num2 % 2 === 0) {
+  console.log(num2 + " is an even number");
+} else {
+  console.log(num2 + " is an odd number");
+}
+
+// Q10: 
+var x = (prompt("Enter the temperature:"));
+if (t > 40) {
+  console.log("It is too hot outside.");
+} else if (t > 30) {
+  console.log("The Weather today is Normal.");
+} else if (t > 20) {
+  console.log("Today's Weather is cool.");
+} else if (t > 10) {
+  console.log("OMG! Today's weather is so Cool.");
+}
+
+// Q11: 
+var n1 = prompt("Enter first number:");
+var n2 = prompt("Enter second number:");
+var x = prompt("Enter operation (+, -, *, /, %):");
+
+if (op === "+") {
+  console.log("Result: " + (n1 + n2));
+} else if (op === "-") {
+  console.log("Result: " + (n1 - n2));
+} else if (op === "*") {
+  console.log("Result: " + (n1 * n2));
+} else if (op === "/") {
+  console.log("Result: " + (n1 / n2));
+} else if (op === "%") {
+  console.log("Result: " + (n1 % n2));
+} else {
+  console.log("Invalid operation");
+}
+  </script>
+</body>
+</html>
